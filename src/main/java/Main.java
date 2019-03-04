@@ -30,6 +30,8 @@ public class Main {
 
         try {
 
+
+
             //Recherche
 
             Query query = new Query(queryToSearch);
@@ -38,7 +40,7 @@ public class Main {
 
             for (Status status : result.getTweets()) {
                 System.out.println(status.getCreatedAt()); // Date
-                System.out.println("@" + status.getUser().getScreenName() + " : "); // Récupère l'user et son @username Twitter
+                System.out.println("@" + status.getUser().getScreenName()); // Récupère l'user et son @username Twitter
                 System.out.println(status.getText()); // Le tweet
                 System.out.println('\n');
 
@@ -62,6 +64,7 @@ public class Main {
     /*Twitter t = getTwitterInstance();
     showHomeTimeline(t);*/
 
+        Convert.ConvertCSVToTrans("test.txt");
 
         //Authentification
         TwitterFactory tf = Authentification();
