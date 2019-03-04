@@ -36,15 +36,12 @@ public class Main {
             query.setCount(90);
             QueryResult result = twitter.search(query);
 
-            int i = 1;
             for (Status status : result.getTweets()) {
+                System.out.println(status.getCreatedAt()); // Date
+                System.out.println("@" + status.getUser().getScreenName() + " : "); // Récupère l'user et son @username Twitter
+                System.out.println(status.getText()); // Le tweet
                 System.out.println('\n');
-                System.out.println("@" + status.getUser().getScreenName());
-                System.out.println(" :  ");
-                System.out.println(status.getText());
-                System.out.println(i);
-                System.out.println('\n');
-                ++i;
+
             }
 
             System.out.println("Nombre de tweet final : " + result.getCount());
