@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2643d249-d6ba-462d-80bd-04b8cb133295" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitminer.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sujet.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/.cproject" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/AprioriSets.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/AprioriSets.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/Data.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/Data.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/Item.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/Item.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/aprioritest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/test.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apriori/test.trans" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+            <state relative-caret-position="321">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -73,6 +85,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="twitminer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitminerAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -82,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551689686801" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551689985692" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -120,12 +137,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551687308248</updated>
-      <workItem from="1551687314292" duration="2352000" />
+      <workItem from="1551687314292" duration="2625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2352000" />
+    <option name="totallyTimeSpent" value="2625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="140" y="46" width="1400" height="960" extended-state="0" />
@@ -135,7 +152,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962853" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962853" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32893157" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -145,7 +162,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32893157" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32893157" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -167,8 +184,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        <state relative-caret-position="321">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>

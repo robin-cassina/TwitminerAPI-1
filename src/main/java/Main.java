@@ -44,9 +44,8 @@ public class Main {
 
             }
 
-            System.out.println("Nombre de tweet final : " + result.getCount());
-
         }
+
         catch (TwitterException e) {
             e.printStackTrace();
         }
