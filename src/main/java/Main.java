@@ -1,7 +1,11 @@
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
+import com.opencsv.CSVWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import java.util.List;
+
 
 
 public class Main {
@@ -12,7 +16,7 @@ public class Main {
     static final String ACCESS_TOKEN = "1101105543534571520-i6RHOhpUohoeCTdAzNnWQgycfxFrQ0";
     static final String ACCESS_TOKEN_SECRET = "tQ0rIXu2uVTWseXybUdlD4qol464gGB5vEhnV0Xha6Wkp";
 
-
+    static String line;
 
     private static TwitterFactory Authentification() {
         ConfigurationBuilder cb = new ConfigurationBuilder();
@@ -26,7 +30,8 @@ public class Main {
         return tf;
     }
 
-    private static void searchByKeyWord(Twitter twitter, String queryToSearch) {
+    public static void searchByKeyWord(Twitter twitter, String queryToSearch) {
+
 
         try {
 
@@ -35,15 +40,20 @@ public class Main {
             //Recherche
 
             Query query = new Query(queryToSearch);
-            query.setCount(90);
+            query.setCount(1);
             QueryResult result = twitter.search(query);
 
             for (Status status : result.getTweets()) {
-                System.out.println(status.getCreatedAt()); // Date
-                System.out.println("@" + status.getUser().getScreenName()); // Récupère l'user et son @username Twitter
-                System.out.println(status.getText()); // Le tweet
-                System.out.println('\n');
-
+                line = status.getCreatedAt().toString() + " " + status.getLang() + " " + "@" + status.getUser().getScreenName() + status.getText();
+                System.out.println(line);
+                if (!status.isRetweet()) {
+//                    System.out.println(status.getCreatedAt()); // Date
+//                    System.out.println("@" + status.getUser().getScreenName()); // Récupère l'user et son @username Twitter
+//                    System.out.println(status.getLang());
+//                    System.out.println(status.getText()); // Le tweet
+//                    System.out.println('\n');
+                }
+                else break;
             }
 
         }
@@ -63,7 +73,7 @@ public class Main {
 
     /*Twitter t = getTwitterInstance();
     showHomeTimeline(t);*/
-
+//        csvWriter.writer(line);
         Convert.ConvertCSVToTrans("test.txt");
 
         //Authentification

@@ -5,12 +5,12 @@ import java.io.IOException;
 public class csvWriter {
 
 
-    public static void writer() {
+    public static void writer(String line) {
 
 
     try {
         CSVWriter writer = new CSVWriter(new FileWriter("marseille.csv"), ';');
-        String[] tweet = ("qurzf ; seco;ntsjrfd thidrhrd").split(" ");
+        String[] tweet = (line);//.split(" ")
         writer.writeNext(tweet);
         writer.close();
     }
